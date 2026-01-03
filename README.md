@@ -1,6 +1,6 @@
 # 👋 Welcome to MindHarbourAI
 
-![MindHarbourAI Logo]([./assets/logo.png](https://avatars.githubusercontent.com/u/216767986?v=4))
+![MindHarbourAI Logo](https://avatars.githubusercontent.com/u/216767986?v=4)
 
 **MindHarbourAI** – *AI that understands CAD, so engineers can focus on design, not mistakes.*
 
