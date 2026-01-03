@@ -41,15 +41,4 @@ We are building the **next-generation AI platform for engineering drawings and 3
 - **Full CAD Integration:** Partnerships with CAD software companies  
 - **Multi-Language Support:** ISO/ASME compliance across regions  
 
----
-
-## 🔥 MindHarbourAI MVP Workflow
-
-```mermaid
-graph TD
-    A[PDF / CAD Input] --> B[PDF Parser / OCR]
-    B --> C[Image + Text Extraction]
-    C --> D[Dimension & GD&T Analysis]
-    D --> E[Stack-Up & Tolerance Validation]
-    E --> F[RAG + LLM Recommendations]
-    F --> G[Annotated PDF Output]
+--
