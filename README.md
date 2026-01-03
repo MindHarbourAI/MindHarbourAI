@@ -1,7 +1,5 @@
 # 👋 Welcome to MindHarbourAI
 
-![MindHarbourAI Logo](https://avatars.githubusercontent.com/u/216767986?v=4)
-
 **MindHarbourAI** – *AI that understands CAD, so engineers can focus on design, not mistakes.*
 
 We are building the **next-generation AI platform for engineering drawings and 3D CAD intelligence**. Our system can automatically detect errors, validate GD&T and dimensions, and provide actionable recommendations directly on your CAD drawings.
