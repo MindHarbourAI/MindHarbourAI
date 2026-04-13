@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MindHarbourAI — Next-generation AI productivity tools for task management, workflow automation, and smart business insights." />
+  <title>MindHarbourAI — Intelligent Productivity, Powered by AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__logo">
+        <img src="logoImage.png" alt="MindHarbourAI Logo" class="nav__logo-icon">
+        MindHarbourAI
+      </a>
+
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#home"     class="nav__link">Home</a>
+        <a href="#products" class="nav__link">Products</a>
+        <a href="#about"    class="nav__link">About</a>
+        <a href="#contact"  class="nav__link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary nav__cta">Get started</a>
+
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="nav__drawer" id="navDrawer" aria-hidden="true">
+      <a href="#home"     class="nav__drawer-link">Home</a>
+      <a href="#products" class="nav__drawer-link">Products</a>
+      <a href="#about"    class="nav__drawer-link">About</a>
+      <a href="#contact"  class="nav__drawer-link">Contact</a>
+      <a href="#contact"  class="btn btn--primary nav__drawer-cta">Get started</a>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero__bg-grid" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="badge badge--pill hero__badge">
+          <span class="badge__dot"></span>
+          Next-generation AI platform
+        </div>
+
+        <h1 class="hero__headline">
+          Innovating productivity,<br />
+          powered by <em class="hero__headline-accent">artificial intelligence</em>
+        </h1>
+
+        <p class="hero__subtext">
+          MindHarbourAI is your trusted hub for intelligent productivity tools — modern, AI-powered
+          solutions tailored for task management, workflow automation, and smart business insights.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#products" class="btn btn--primary btn--lg">Explore products</a>
+          <a href="#contact"  class="btn btn--ghost  btn--lg">Get a demo</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="metrics-card">
+          <div class="metrics-grid">
+            <div class="metric metric--blue">
+              <span class="metric__val">10M+</span>
+              <span class="metric__label">API calls / day</span>
+              <div class="metric__bar"><div class="metric__bar-fill" style="--w:82%"></div></div>
+            </div>
+            <div class="metric metric--purple">
+              <span class="metric__val">99.9%</span>
+              <span class="metric__label">Uptime SLA</span>
+              <div class="metric__bar"><div class="metric__bar-fill" style="--w:99%"></div></div>
+            </div>
+            <div class="metric metric--green">
+              <span class="metric__val">10k+</span>
+              <span class="metric__label">Companies</span>
+              <div class="metric__bar"><div class="metric__bar-fill" style="--w:70%"></div></div>
+            </div>
+            <div class="metric metric--orange">
+              <span class="metric__val">95%</span>
+              <span class="metric__label">Forecast accuracy</span>
+              <div class="metric__bar"><div class="metric__bar-fill" style="--w:95%"></div></div>
+            </div>
+          </div>
+          <div class="status-pill">
+            <span class="status-pill__dot"></span>
+            All systems operational · Live monitoring active
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       STATS STRIP
+  ============================================================ -->
+  <div class="stats-strip">
+    <div class="container stats-strip__inner">
+      <div class="stat">
+        <span class="stat__val">6</span>
+        <span class="stat__label">AI products</span>
+      </div>
+      <div class="stat__divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat__val">10k+</span>
+        <span class="stat__label">Companies</span>
+      </div>
+      <div class="stat__divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat__val">10M+</span>
+        <span class="stat__label">Daily API calls</span>
+      </div>
+      <div class="stat__divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat__val">99.9%</span>
+        <span class="stat__label">Uptime</span>
+      </div>
+      <div class="stat__divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat__val">24/7</span>
+        <span class="stat__label">AI monitoring</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       PRODUCTS
+  ============================================================ -->
+  <section class="products" id="products">
+    <div class="container">
+      <header class="section-header">
+        <h2 class="section-header__title">Our AI product suite</h2>
+        <p class="section-header__sub">
+          Revolutionary AI-powered solutions designed to automate, optimize, and transform your business.
+        </p>
+      </header>
+
+      <div class="products__grid">
+
+        <article class="product-card" data-product="chatbot">
+          <div class="product-card__visual product-card__visual--blue">
+            <span class="product-card__icon" aria-hidden="true">🤖</span>
+            <span class="badge badge--new product-card__badge">New</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">AI ChatBot Pro</h3>
+            <p class="product-card__desc">Advanced conversational AI with NLP, multi-language support, sentiment analysis, and custom training on your data.</p>
+            <footer class="product-card__footer">
+              <span class="product-card__price">$199<span>/mo</span></span>
+              <button class="btn btn--sm btn--blue product-card__cta" data-modal="chatbot">Learn more</button>
+            </footer>
+          </div>
+        </article>
+
+        <article class="product-card" data-product="analytics">
+          <div class="product-card__visual product-card__visual--purple">
+            <span class="product-card__icon" aria-hidden="true">📊</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Predictive Analytics AI</h3>
+            <p class="product-card__desc">ML platform for forecasting trends, customer behavior, and business outcomes with 95% accuracy. Real-time dashboards included.</p>
+            <footer class="product-card__footer">
+              <span class="product-card__price">$299<span>/mo</span></span>
+              <button class="btn btn--sm btn--purple product-card__cta" data-modal="analytics">Learn more</button>
+            </footer>
+          </div>
+        </article>
+
+        <article class="product-card" data-product="content">
+          <div class="product-card__visual product-card__visual--teal">
+            <span class="product-card__icon" aria-hidden="true">🎨</span>
+            <span class="badge badge--hot product-card__badge">Hot</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">AI Content Generator</h3>
+            <p class="product-card__desc">Create high-quality content, images, and videos using advanced generative AI models trained on billions of data points.</p>
+            <footer class="product-card__footer">
+              <span class="product-card__price">$149<span>/mo</span></span>
+              <button class="btn btn--sm btn--teal product-card__cta" data-modal="content">Learn more</button>
+            </footer>
+          </div>
+        </article>
+
+        <!--
+        <article class="product-card" data-product="vision">
+          <div class="product-card__visual product-card__visual--orange">
+            <span class="product-card__icon" aria-hidden="true">🔍</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">Computer Vision AI</h3>
+            <p class="product-card__desc">Real-time image and video analysis for object detection, facial recognition, and automated quality control.</p>
+            <footer class="product-card__footer">
+              <span class="product-card__price">$399<span>/mo</span></span>
+              <button class="btn btn--sm btn--orange product-card__cta" data-modal="vision">Learn more</button>
+            </footer>
+          </div>
+        </article>
+
+        <article class="product-card" data-product="automl">
+          <div class="product-card__visual product-card__visual--indigo">
+            <span class="product-card__icon" aria-hidden="true">🧮</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">AutoML Platform</h3>
+            <p class="product-card__desc">No-code ML platform that automatically builds, trains, and deploys custom AI models. No data science team needed.</p>
+            <footer class="product-card__footer">
+              <span class="product-card__price">$499<span>/mo</span></span>
+              <button class="btn btn--sm btn--indigo product-card__cta" data-modal="automl">Learn more</button>
+            </footer>
+          </div>
+        </article>
+
+        <article class="product-card" data-product="recommend">
+          <div class="product-card__visual product-card__visual--pink">
+            <span class="product-card__icon" aria-hidden="true">🎯</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">AI Recommendation Engine</h3>
+            <p class="product-card__desc">Personalized recommendation system powered by deep learning to boost engagement and conversion rates.</p>
+            <footer class="product-card__footer">
+              <span class="product-card__price">$249<span>/mo</span></span>
+              <button class="btn btn--sm btn--pink product-card__cta" data-modal="recommend">Learn more</button>
+            </footer>
+          </div>
+        </article>
+        -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__left">
+        <h2 class="about__title">Leading the<br />AI revolution</h2>
+        <p class="about__desc">
+          We're at the forefront of artificial intelligence innovation, creating products that harness
+          the power of machine learning, neural networks, and deep learning to solve real-world problems
+          and drive business growth.
+        </p>
+        <ul class="checklist" role="list">
+          <li class="checklist__item">State-of-the-art neural networks</li>
+          <li class="checklist__item">Enterprise-grade AI infrastructure</li>
+          <li class="checklist__item">24/7 AI model monitoring and alerting</li>
+          <li class="checklist__item">Continuous model improvement and retraining</li>
+          <li class="checklist__item">SOC 2 compliant, enterprise security</li>
+        </ul>
+      </div>
+
+      <div class="about__right">
+        <div class="about-card">
+          <div class="about-card__icon" aria-hidden="true">⚡</div>
+          <h3 class="about-card__title">Ready to transform your business?</h3>
+          <p class="about-card__text">Join over 10,000+ companies already using our AI solutions to drive innovation and growth.</p>
+          <div class="about-card__metrics">
+            <div class="about-card__metric">
+              <span class="about-card__metric-val">99.9%</span>
+              <span class="about-card__metric-label">Uptime</span>
+            </div>
+            <div class="about-card__metric">
+              <span class="about-card__metric-val">10M+</span>
+              <span class="about-card__metric-label">API calls/day</span>
+            </div>
+            <div class="about-card__metric">
+              <span class="about-card__metric-val">&lt;50ms</span>
+              <span class="about-card__metric-label">Avg latency</span>
+            </div>
+            <div class="about-card__metric">
+              <span class="about-card__metric-val">40+</span>
+              <span class="about-card__metric-label">Integrations</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--white btn--lg">Start your AI journey</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <header class="section-header section-header--dark">
+        <h2 class="section-header__title">Let's build the future together</h2>
+        <p class="section-header__sub">Ready to implement AI in your business? Our experts are here to help.</p>
+      </header>
+
+      <div class="contact__box">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Get in touch</h3>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 4a2 2 0 012-2h12a2 2 0 012 2v.382l-8 5-8-5V4zm0 2.618V16a2 2 0 002 2h12a2 2 0 002-2V6.618l-8 5-8-5z"/></svg>
+            </div>
+            <div>
+              <p class="contact__detail-label">Email</p>
+              <span class="contact__detail-val">ai@mindharbour.com</span>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+            </div>
+            <div>
+              <p class="contact__detail-label">Headquarters</p>
+              <span class="contact__detail-val">Silicon Valley, CA 94000</span>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            </div>
+            <div>
+              <p class="contact__detail-label">Phone</p>
+              <span class="contact__detail-val">+1 (555) 246-8324</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="you@company.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="usecase">AI use case</label>
+            <select class="form-input form-select" id="usecase" name="usecase">
+              <option value="customer-service">Customer service automation</option>
+              <option value="analytics">Predictive analytics</option>
+              <option value="content">Content generation</option>
+              <option value="vision">Computer vision</option>
+              <option value="custom">Custom AI solution</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input form-textarea" id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--gradient btn--lg btn--full">Request AI consultation</button>
+          <p class="contact__form-note" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">
+            <span>⬡</span> MindHarbourAI
+          </div>
+          <p class="footer__brand-desc">Pioneering the future of artificial intelligence with cutting-edge products and enterprise solutions.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Products</h4>
+          <ul class="footer__links" role="list">
+            <li><a href="#products">ChatBot Pro</a></li>
+            <li><a href="#products">Predictive Analytics</a></li>
+            <li><a href="#products">Content Generator</a></li>
+            <li><a href="#products">Computer Vision</a></li>
+            <li><a href="#products">AutoML Platform</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Resources</h4>
+          <ul class="footer__links" role="list">
+            <li><a href="#">API documentation</a></li>
+            <li><a href="#">AI research</a></li>
+            <li><a href="#">Case studies</a></li>
+            <li><a href="#">Developer tools</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Company</h4>
+          <ul class="footer__links" role="list">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2025 MindHarbourAI. Shaping the future with artificial intelligence.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       PRODUCT MODAL
+  ============================================================ -->
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" id="modalClose" aria-label="Close modal">✕</button>
+      <div class="modal__icon" id="modalIcon" aria-hidden="true"></div>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <p class="modal__desc" id="modalDesc"></p>
+      <div class="modal__actions">
+        <a href="#contact" class="btn btn--gradient btn--lg modal__cta" id="modalCta">Start free trial</a>
+        <button class="btn btn--ghost btn--lg" id="modalCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
