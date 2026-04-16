@@ -1,81 +1,76 @@
-# 🚀 MindHarbourAI – AI Productivity Suite
+# 🚀 MindHarbourAI – AI Productivity & Engineering Intelligence Suite
 
 ## 🧠 Overview
 
-MindHarbourAI is an AI-powered productivity suite designed to help organizations unlock the value of their data, automate workflows, and build intelligent systems.
+MindHarbourAI is an AI-powered platform designed to help organizations transform data into decisions and actions.
 
-It consists of three core products:
+It combines intelligent knowledge retrieval, task automation, and engineering-focused AI tools into a unified system.
 
-* **Cadox** – Intelligent document processing & understanding
-* **Ragify** – Retrieval-Augmented Generation (RAG) platform
-* **SailTask** – AI-powered task automation and workflow assistant
+### Core Products:
 
-Together, they enable businesses to move from raw data → insights → action.
+* **Ragify** – AI-powered knowledge retrieval (RAG)
+* **SailTask** – AI-driven task and workflow automation
+* **Cadox** – AI for CAD and engineering intelligence
 
 ---
 
 ## 🎯 Vision
 
-To build scalable AI systems that simplify how organizations interact with knowledge, automate decisions, and improve productivity.
+To build intelligent systems that reduce manual effort, automate decision-making, and enhance productivity across knowledge work and engineering domains.
 
 ---
 
 ## 🧩 Products
 
-### 📄 Cadox – Document Intelligence Engine
+### 🔍 Ragify – Intelligent Knowledge Assistant
 
-Cadox focuses on extracting and understanding information from unstructured data.
-
-**Key Features:**
-
-* PDF and document parsing
-* Structured data extraction
-* Semantic understanding of content
-* Preprocessing for downstream AI systems
-
-**Use Case:** Converting raw documents into machine-readable knowledge.
-
----
-
-### 🔍 Ragify – Intelligent Knowledge Retrieval (RAG)
-
-Ragify enables context-aware question answering over private datasets using RAG architecture.
+Ragify enables users to query documents and datasets using natural language through Retrieval-Augmented Generation (RAG).
 
 **Key Features:**
 
 * Semantic search using embeddings
+* Context-aware responses using LLMs
 * Vector database integration (FAISS)
-* Context-aware LLM responses
-* Modular retrieval pipeline
+* Fast and scalable retrieval pipeline
 
-**Use Case:** Internal knowledge assistant, enterprise search, research tools.
+**Use Case:**
+Enterprise search, research assistance, internal knowledge systems
 
 ---
 
-### ⚙️ SailTask – AI Workflow Automation
+### ⚙️ SailTask – AI Task & Workflow Automation
 
-SailTask automates repetitive tasks and workflows using AI-driven logic.
+SailTask transforms insights into actionable tasks using AI.
+
+Instead of manually creating tasks, SailTask intelligently generates and manages workflows.
 
 **Key Features:**
 
-* Task orchestration
+* Automatic task generation from text, documents, or insights
 * AI-assisted decision making
 * Workflow automation pipelines
 * Integration-ready APIs
 
-**Use Case:** Automating business processes and operations.
+**Use Case:**
+Meeting summaries → action items, document → task extraction, operations automation
 
 ---
 
-## 🏗️ Architecture
+### 🏗️ Cadox – AI for CAD & Engineering Intelligence
 
-MindHarbourAI follows a modular architecture:
+Cadox is focused on bringing AI capabilities into CAD and engineering workflows.
 
-Cadox → Ragify → SailTask
+It aims to assist engineers in understanding, analyzing, and optimizing design data.
 
-* **Cadox** processes raw data
-* **Ragify** retrieves and understands knowledge
-* **SailTask** executes actions based on insights
+**Key Features:**
+
+* CAD file analysis and processing
+* Design understanding and metadata extraction
+* Engineering knowledge integration
+* AI-assisted design insights (future scope)
+
+**Use Case:**
+Mechanical design workflows, CAD data analysis, engineering decision support
 
 ---
 
@@ -89,61 +84,22 @@ Cadox → Ragify → SailTask
 
 ---
 
-## 🚀 Getting Started
-
-### Clone the Repository
-
-```bash id="h3x9dp"
-git clone https://github.com/your-username/mindharbourai.git
-cd mindharbourai
-```
-
-### Setup Environment
-
-```bash id="rj9vkt"
-python -m venv .env
-source .env/bin/activate
-```
-
-### Install Dependencies
-
-```bash id="qv9k21"
-pip install -r requirements.txt
-```
-
-### Run the Application
-
-```bash id="pj4m1x"
-python main.py
-```
-
----
-
-## 🐳 Docker Deployment
-
-```bash id="t1w9kz"
-docker build -t mindharbourai .
-docker run -p 8000:8000 mindharbourai
-```
-
----
-
 ## 📊 Use Cases
 
-* Enterprise Knowledge Systems
-* AI Chatbots for Organizations
-* Document Intelligence Pipelines
-* Workflow Automation Systems
+* Enterprise AI Assistants
+* Knowledge Management Systems
+* Workflow & Task Automation
+* Engineering & CAD Intelligence
 
 ---
 
 ## 📈 Roadmap
 
 * 🔗 Knowledge Graph integration
-* 🌍 Multilingual AI support
+* ⚡ Real-time AI workflows
+* 🌍 Multilingual support
+* 🏗️ Advanced CAD intelligence (Cadox)
 * ☁️ Scalable SaaS deployment
-* 📊 Analytics dashboard
-* 🔌 Third-party integrations
 
 ---
 
