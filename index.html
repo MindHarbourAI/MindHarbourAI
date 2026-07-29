@@ -1,250 +1,320 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="MindHarbourAI — Next-generation AI productivity tools for task management, workflow automation, and smart business insights." />
-  <title>MindHarbourAI — Intelligent Productivity, Powered by AI</title>
+  <meta name="description" content="MindHarbourAI — Next-Generation AI Productivity & Engineering Intelligence Suite featuring Ragify, SailTask, and Cadox." />
+  <title>MindHarbourAI — AI Productivity & Engineering Intelligence Suite</title>
+  
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Background Ambient Glow & Neural Grid Overlay -->
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--3" aria-hidden="true"></div>
+  <div class="neural-grid-bg" aria-hidden="true"></div>
+
   <!-- ============================================================
-       NAVIGATION
+       NAVIGATION BAR
   ============================================================ -->
   <header class="nav" id="nav">
     <div class="nav__inner container">
-      <a href="#home" class="nav__logo">
-        <img src="logoImage.png" alt="MindHarbourAI Logo" class="nav__logo-icon">
-        MindHarbourAI
+      <a href="#home" class="nav__logo" aria-label="MindHarbourAI Home">
+        <div class="nav__logo-wrapper">
+          <img src="logoImage.png" alt="MindHarbourAI Icon" class="nav__logo-icon" />
+        </div>
+        <span class="nav__logo-text">MindHarbour<span class="nav__logo-accent">AI</span></span>
       </a>
 
-      <nav class="nav__links" aria-label="Primary navigation">
-        <a href="#home"     class="nav__link">Home</a>
-        <a href="#products" class="nav__link">Products</a>
-        <a href="#about"    class="nav__link">About</a>
-        <a href="#contact"  class="nav__link">Contact</a>
+      <nav class="nav__links" aria-label="Primary Navigation">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#products" class="nav__link">AI Products</a>
+        <a href="#playground" class="nav__link">Interactive AI Sandbox</a>
+        <a href="#architecture" class="nav__link">Tech Architecture</a>
+        <a href="#founder" class="nav__link">Founder & Vision</a>
+        <a href="#faq" class="nav__link">FAQ</a>
       </nav>
 
-      <a href="#contact" class="btn btn--primary nav__cta">Get started</a>
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--primary btn--glow nav__cta">
+          <span>Get Started</span>
+          <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </a>
 
-      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+        <button class="nav__burger" id="navBurger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
 
-    <!-- Mobile drawer -->
+    <!-- Mobile Navigation Drawer -->
     <div class="nav__drawer" id="navDrawer" aria-hidden="true">
-      <a href="#home"     class="nav__drawer-link">Home</a>
-      <a href="#products" class="nav__drawer-link">Products</a>
-      <a href="#about"    class="nav__drawer-link">About</a>
-      <a href="#contact"  class="nav__drawer-link">Contact</a>
-      <a href="#contact"  class="btn btn--primary nav__drawer-cta">Get started</a>
+      <a href="#home" class="nav__drawer-link">Home</a>
+      <a href="#products" class="nav__drawer-link">AI Products</a>
+      <a href="#playground" class="nav__drawer-link">Interactive Sandbox</a>
+      <a href="#architecture" class="nav__drawer-link">Tech Architecture</a>
+      <a href="#founder" class="nav__drawer-link">Founder & Vision</a>
+      <a href="#faq" class="nav__drawer-link">FAQ</a>
+      <a href="#contact" class="btn btn--primary btn--full nav__drawer-cta">Request Access & Consultation</a>
     </div>
   </header>
 
 
   <!-- ============================================================
-       HERO
+       HERO & INITIAL VIEWPORT WRAPPER
   ============================================================ -->
-  <section class="hero" id="home">
-    <div class="hero__bg-grid" aria-hidden="true"></div>
-    <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
-    <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
-
-    <div class="container hero__inner">
-      <div class="hero__content">
-        <div class="badge badge--pill hero__badge">
-          <span class="badge__dot"></span>
-          Next-generation AI platform
-        </div>
-
-        <h1 class="hero__headline">
-          Innovating productivity,<br />
-          powered by <em class="hero__headline-accent">artificial intelligence</em>
-        </h1>
-
-        <p class="hero__subtext">
-          MindHarbourAI is your trusted hub for intelligent productivity tools — modern, AI-powered
-          solutions tailored for task management, workflow automation, and smart business insights.
-        </p>
-
-        <div class="hero__actions">
-          <a href="#products" class="btn btn--primary btn--lg">Explore products</a>
-          <a href="#contact"  class="btn btn--ghost  btn--lg">Get a demo</a>
-        </div>
-      </div>
-
-      <div class="hero__visual" aria-hidden="true">
-        <div class="metrics-card">
-          <div class="metrics-grid">
-            <div class="metric metric--blue">
-              <span class="metric__val">10M+</span>
-              <span class="metric__label">API calls / day</span>
-              <div class="metric__bar"><div class="metric__bar-fill" style="--w:82%"></div></div>
-            </div>
-            <div class="metric metric--purple">
-              <span class="metric__val">99.9%</span>
-              <span class="metric__label">Uptime SLA</span>
-              <div class="metric__bar"><div class="metric__bar-fill" style="--w:99%"></div></div>
-            </div>
-            <div class="metric metric--green">
-              <span class="metric__val">10k+</span>
-              <span class="metric__label">Companies</span>
-              <div class="metric__bar"><div class="metric__bar-fill" style="--w:70%"></div></div>
-            </div>
-            <div class="metric metric--orange">
-              <span class="metric__val">95%</span>
-              <span class="metric__label">Forecast accuracy</span>
-              <div class="metric__bar"><div class="metric__bar-fill" style="--w:95%"></div></div>
-            </div>
+  <div class="hero-screen-wrapper">
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="badge badge--pill hero__badge reveal">
+            <span class="badge__dot"></span>
+            <span>MindHarbourAI Platform v2.0 • AI & Engineering Suite</span>
           </div>
-          <div class="status-pill">
-            <span class="status-pill__dot"></span>
-            All systems operational · Live monitoring active
+
+          <h1 class="hero__headline reveal reveal-delay-1">
+            Transform Data into Action with <span class="text-gradient">Autonomous AI Workflows</span> & Engineering Intelligence
+          </h1>
+
+          <p class="hero__subtext reveal reveal-delay-2">
+            MindHarbourAI empowers modern enterprises and engineering teams to unify Retrieval-Augmented Generation (RAG), automated workflow pipelines, and CAD design intelligence into one unified high-performance platform.
+          </p>
+
+          <div class="hero__actions reveal reveal-delay-3">
+            <a href="#products" class="btn btn--primary btn--lg btn--glow">
+              <span>Explore AI Suite</span>
+              <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="#playground" class="btn btn--glass btn--lg">
+              <svg class="btn__icon-left" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+              <span>Live Interactive Demo</span>
+            </a>
+          </div>
+
+          <div class="hero__tags reveal reveal-delay-4">
+            <span class="hero__tag-item">✓ Semantic RAG Engine</span>
+            <span class="hero__tag-item">✓ Auto-Workflow Generation</span>
+            <span class="hero__tag-item">✓ CAD Metadata Extraction</span>
           </div>
         </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero__visual reveal reveal-delay-2">
+          <div class="hero__dashboard-card">
+            <div class="hero__dashboard-header">
+              <div class="window-controls">
+                <span class="dot dot--red"></span>
+                <span class="dot dot--yellow"></span>
+                <span class="dot dot--green"></span>
+              </div>
+              <div class="dashboard-title">
+                <span class="pulse-icon"></span>
+                mindharbour-ai-core // live-telemetry
+              </div>
+            </div>
+            
+            <div class="hero__dashboard-img-wrapper">
+              <img src="side.png" alt="MindHarbourAI Intelligence Dashboard" class="hero__dashboard-img" />
+              <div class="hero__overlay-badge hero__overlay-badge--1">
+                <div class="badge-icon">⚡</div>
+                <div>
+                  <span class="badge-title">RAG Vector Search</span>
+                  <span class="badge-val">&lt;35ms Latency • FAISS</span>
+                </div>
+              </div>
+              <div class="hero__overlay-badge hero__overlay-badge--2">
+                <div class="badge-icon">⚙️</div>
+                <div>
+                  <span class="badge-title">SailTask Automation</span>
+                  <span class="badge-val">Active Workflow Pipeline</span>
+                </div>
+              </div>
+              <div class="hero__overlay-badge hero__overlay-badge--3">
+                <div class="badge-icon">🏗️</div>
+                <div>
+                  <span class="badge-title">Cadox CAD Engine</span>
+                  <span class="badge-val">Coming Soon • Active R&D</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- ============================================================
-       STATS STRIP
-  ============================================================ -->
-  <div class="stats-strip">
-    <div class="container stats-strip__inner">
-      <div class="stat">
-        <span class="stat__val">6</span>
-        <span class="stat__label">AI products</span>
+    <!-- ============================================================
+         STATS & IMPACT STRIP
+    ============================================================ -->
+    <section class="stats-strip">
+      <div class="container stats-strip__inner">
+        <div class="stat reveal">
+          <span class="stat__val">10x</span>
+          <span class="stat__label">Faster Knowledge Retrieval</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat reveal reveal-delay-1">
+          <span class="stat__val">99.9%</span>
+          <span class="stat__label">RAG Retrieval Accuracy</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat reveal reveal-delay-2">
+          <span class="stat__val">2 Live + 1 R&D</span>
+          <span class="stat__label">Specialized AI Engines</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat reveal reveal-delay-3">
+          <span class="stat__val">&lt;40ms</span>
+          <span class="stat__label">Average Inference Latency</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat reveal reveal-delay-4">
+          <span class="stat__val">100%</span>
+          <span class="stat__label">Enterprise Data Privacy</span>
+        </div>
       </div>
-      <div class="stat__divider" aria-hidden="true"></div>
-      <div class="stat">
-        <span class="stat__val">10k+</span>
-        <span class="stat__label">Companies</span>
-      </div>
-      <div class="stat__divider" aria-hidden="true"></div>
-      <div class="stat">
-        <span class="stat__val">10M+</span>
-        <span class="stat__label">Daily API calls</span>
-      </div>
-      <div class="stat__divider" aria-hidden="true"></div>
-      <div class="stat">
-        <span class="stat__val">99.9%</span>
-        <span class="stat__label">Uptime</span>
-      </div>
-      <div class="stat__divider" aria-hidden="true"></div>
-      <div class="stat">
-        <span class="stat__val">24/7</span>
-        <span class="stat__label">AI monitoring</span>
-      </div>
-    </div>
+    </section>
   </div>
 
 
   <!-- ============================================================
-       PRODUCTS
+       PRODUCTS SECTION (Ragify, SailTask, Cadox)
   ============================================================ -->
   <section class="products" id="products">
     <div class="container">
-      <header class="section-header">
-        <h2 class="section-header__title">Our AI product suite</h2>
+      <header class="section-header reveal">
+        <div class="badge badge--pill">Core Innovation Suite</div>
+        <h2 class="section-header__title">Our AI Product Ecosystem</h2>
         <p class="section-header__sub">
-          Revolutionary AI-powered solutions designed to automate, optimize, and transform your business.
+          <strong>Ragify</strong> and <strong>SailTask</strong> are currently active and available for enterprise deployment. <strong>Cadox</strong> CAD engineering intelligence is under active development and coming soon.
         </p>
       </header>
 
       <div class="products__grid">
 
-        <article class="product-card" data-product="chatbot">
-          <div class="product-card__visual product-card__visual--blue">
-            <span class="product-card__icon" aria-hidden="true">🤖</span>
-            <span class="badge badge--new product-card__badge">New</span>
+        <!-- Product 1: Ragify -->
+        <article class="product-card product-card--ragify reveal" data-product="ragify">
+          <div class="product-card__visual">
+            <div class="product-card__glow product-card__glow--cyan"></div>
+            <div class="product-card__icon-box">
+              <span class="product-card__icon">🔍</span>
+            </div>
+            <span class="badge badge--live product-card__badge">Live Engine</span>
           </div>
+
           <div class="product-card__body">
-            <h3 class="product-card__title">AI ChatBot Pro</h3>
-            <p class="product-card__desc">Advanced conversational AI with NLP, multi-language support, sentiment analysis, and custom training on your data.</p>
+            <div class="product-card__meta">
+              <span class="product-card__version">Product 01 • Live</span>
+              <span class="product-card__tag">Knowledge Retrieval</span>
+            </div>
+
+            <h3 class="product-card__title">Ragify</h3>
+            <p class="product-card__subtitle">AI-Powered Knowledge Retrieval & Vector Search</p>
+            <p class="product-card__desc">
+              Query massive technical documentation, research repositories, and enterprise datasets using natural language through advanced Retrieval-Augmented Generation (RAG).
+            </p>
+
+            <ul class="product-card__features" role="list">
+              <li><span class="feature-dot"></span> Semantic search using dense vector embeddings</li>
+              <li><span class="feature-dot"></span> High-performance FAISS vector store integration</li>
+              <li><span class="feature-dot"></span> Context-aware synthesis with modern LLMs</li>
+              <li><span class="feature-dot"></span> Real-time document indexing & source citations</li>
+            </ul>
+
             <footer class="product-card__footer">
-              <span class="product-card__price">$199<span>/mo</span></span>
-              <button class="btn btn--sm btn--blue product-card__cta" data-modal="chatbot">Learn more</button>
+              <button class="btn btn--sm btn--cyan product-card__cta" data-modal="ragify">
+                <span>Explore Ragify Tech</span>
+                <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </button>
             </footer>
           </div>
         </article>
 
-        <article class="product-card" data-product="analytics">
-          <div class="product-card__visual product-card__visual--purple">
-            <span class="product-card__icon" aria-hidden="true">📊</span>
+        <!-- Product 2: SailTask -->
+        <article class="product-card product-card--sailtask reveal reveal-delay-1" data-product="sailtask">
+          <div class="product-card__visual">
+            <div class="product-card__glow product-card__glow--purple"></div>
+            <div class="product-card__icon-box">
+              <span class="product-card__icon">⚙️</span>
+            </div>
+            <span class="badge badge--live product-card__badge">Live Engine</span>
           </div>
+
           <div class="product-card__body">
-            <h3 class="product-card__title">Predictive Analytics AI</h3>
-            <p class="product-card__desc">ML platform for forecasting trends, customer behavior, and business outcomes with 95% accuracy. Real-time dashboards included.</p>
+            <div class="product-card__meta">
+              <span class="product-card__version">Product 02 • Live</span>
+              <span class="product-card__tag">Task Automation</span>
+            </div>
+
+            <h3 class="product-card__title">SailTask</h3>
+            <p class="product-card__subtitle">AI-Driven Task & Workflow Automation</p>
+            <p class="product-card__desc">
+              Transform unstructured conversations, emails, and raw meeting notes into structured action items, verified task pipelines, and automated integrations.
+            </p>
+
+            <ul class="product-card__features" role="list">
+              <li><span class="feature-dot"></span> Automatic task extraction from documents & chat</li>
+              <li><span class="feature-dot"></span> AI-assisted decision making & priority ranking</li>
+              <li><span class="feature-dot"></span> Multi-step workflow automation pipelines</li>
+              <li><span class="feature-dot"></span> RESTful & Webhook integration-ready APIs</li>
+            </ul>
+
             <footer class="product-card__footer">
-              <span class="product-card__price">$299<span>/mo</span></span>
-              <button class="btn btn--sm btn--purple product-card__cta" data-modal="analytics">Learn more</button>
+              <button class="btn btn--sm btn--purple product-card__cta" data-modal="sailtask">
+                <span>Explore SailTask Tech</span>
+                <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </button>
             </footer>
           </div>
         </article>
 
-        <article class="product-card" data-product="content">
-          <div class="product-card__visual product-card__visual--teal">
-            <span class="product-card__icon" aria-hidden="true">🎨</span>
-            <span class="badge badge--hot product-card__badge">Hot</span>
+        <!-- Product 3: Cadox -->
+        <article class="product-card product-card--cadox reveal reveal-delay-2" data-product="cadox">
+          <div class="product-card__visual">
+            <div class="product-card__glow product-card__glow--blue"></div>
+            <div class="product-card__icon-box">
+              <span class="product-card__icon">🏗️</span>
+            </div>
+            <span class="badge badge--warning product-card__badge">Coming Soon • In R&D</span>
           </div>
-          <div class="product-card__body">
-            <h3 class="product-card__title">AI Content Generator</h3>
-            <p class="product-card__desc">Create high-quality content, images, and videos using advanced generative AI models trained on billions of data points.</p>
-            <footer class="product-card__footer">
-              <span class="product-card__price">$149<span>/mo</span></span>
-              <button class="btn btn--sm btn--teal product-card__cta" data-modal="content">Learn more</button>
-            </footer>
-          </div>
-        </article>
 
-        <!--
-        <article class="product-card" data-product="vision">
-          <div class="product-card__visual product-card__visual--orange">
-            <span class="product-card__icon" aria-hidden="true">🔍</span>
-          </div>
           <div class="product-card__body">
-            <h3 class="product-card__title">Computer Vision AI</h3>
-            <p class="product-card__desc">Real-time image and video analysis for object detection, facial recognition, and automated quality control.</p>
-            <footer class="product-card__footer">
-              <span class="product-card__price">$399<span>/mo</span></span>
-              <button class="btn btn--sm btn--orange product-card__cta" data-modal="vision">Learn more</button>
-            </footer>
-          </div>
-        </article>
+            <div class="product-card__meta">
+              <span class="product-card__version">Product 03 (Coming Soon)</span>
+              <span class="product-card__tag">CAD Intelligence</span>
+            </div>
 
-        <article class="product-card" data-product="automl">
-          <div class="product-card__visual product-card__visual--indigo">
-            <span class="product-card__icon" aria-hidden="true">🧮</span>
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__title">AutoML Platform</h3>
-            <p class="product-card__desc">No-code ML platform that automatically builds, trains, and deploys custom AI models. No data science team needed.</p>
-            <footer class="product-card__footer">
-              <span class="product-card__price">$499<span>/mo</span></span>
-              <button class="btn btn--sm btn--indigo product-card__cta" data-modal="automl">Learn more</button>
-            </footer>
-          </div>
-        </article>
+            <h3 class="product-card__title">Cadox</h3>
+            <p class="product-card__subtitle">AI for CAD & Engineering Intelligence</p>
+            <p class="product-card__desc">
+              Brings deep artificial intelligence into CAD files and mechanical design workflows to automatically parse design parameters, extract metadata, and optimize engineering decisions.
+            </p>
 
-        <article class="product-card" data-product="recommend">
-          <div class="product-card__visual product-card__visual--pink">
-            <span class="product-card__icon" aria-hidden="true">🎯</span>
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__title">AI Recommendation Engine</h3>
-            <p class="product-card__desc">Personalized recommendation system powered by deep learning to boost engagement and conversion rates.</p>
+            <ul class="product-card__features" role="list">
+              <li><span class="feature-dot"></span> CAD geometry file analysis & processing</li>
+              <li><span class="feature-dot"></span> Design understanding & automated metadata extraction</li>
+              <li><span class="feature-dot"></span> Mechanical & engineering knowledge integration</li>
+              <li><span class="feature-dot"></span> AI-assisted design optimization & insights</li>
+            </ul>
+
             <footer class="product-card__footer">
-              <span class="product-card__price">$249<span>/mo</span></span>
-              <button class="btn btn--sm btn--pink product-card__cta" data-modal="recommend">Learn more</button>
+              <button class="btn btn--sm btn--glass product-card__cta" data-modal="cadox">
+                <span>Coming Soon • Preview R&D</span>
+                <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </button>
             </footer>
           </div>
         </article>
-        -->
 
       </div>
     </div>
@@ -252,50 +322,136 @@
 
 
   <!-- ============================================================
-       ABOUT
+       INTERACTIVE PLAYGROUND / SANDBOX SECTION
   ============================================================ -->
-  <section class="about" id="about">
-    <div class="container about__inner">
-      <div class="about__left">
-        <h2 class="about__title">Leading the<br />AI revolution</h2>
-        <p class="about__desc">
-          We're at the forefront of artificial intelligence innovation, creating products that harness
-          the power of machine learning, neural networks, and deep learning to solve real-world problems
-          and drive business growth.
+  <section class="playground" id="playground">
+    <div class="container">
+      <header class="section-header reveal">
+        <div class="badge badge--pill">Experience It Live</div>
+        <h2 class="section-header__title">Interactive AI Product Sandbox</h2>
+        <p class="section-header__sub">
+          Test drive how MindHarbourAI engines process natural language, extract tasks, and analyze complex engineering assets in real time.
         </p>
-        <ul class="checklist" role="list">
-          <li class="checklist__item">State-of-the-art neural networks</li>
-          <li class="checklist__item">Enterprise-grade AI infrastructure</li>
-          <li class="checklist__item">24/7 AI model monitoring and alerting</li>
-          <li class="checklist__item">Continuous model improvement and retraining</li>
-          <li class="checklist__item">SOC 2 compliant, enterprise security</li>
-        </ul>
-      </div>
+      </header>
 
-      <div class="about__right">
-        <div class="about-card">
-          <div class="about-card__icon" aria-hidden="true">⚡</div>
-          <h3 class="about-card__title">Ready to transform your business?</h3>
-          <p class="about-card__text">Join over 10,000+ companies already using our AI solutions to drive innovation and growth.</p>
-          <div class="about-card__metrics">
-            <div class="about-card__metric">
-              <span class="about-card__metric-val">99.9%</span>
-              <span class="about-card__metric-label">Uptime</span>
-            </div>
-            <div class="about-card__metric">
-              <span class="about-card__metric-val">10M+</span>
-              <span class="about-card__metric-label">API calls/day</span>
-            </div>
-            <div class="about-card__metric">
-              <span class="about-card__metric-val">&lt;50ms</span>
-              <span class="about-card__metric-label">Avg latency</span>
-            </div>
-            <div class="about-card__metric">
-              <span class="about-card__metric-val">40+</span>
-              <span class="about-card__metric-label">Integrations</span>
+      <div class="sandbox reveal">
+        <!-- Sandbox Nav Tabs -->
+        <div class="sandbox__tabs" role="tablist">
+          <button class="sandbox__tab active" id="tab-ragify" data-tab="ragify" role="tab" aria-selected="true" aria-controls="panel-ragify">
+            <span class="sandbox__tab-icon">🔍</span>
+            <span>Ragify (Live RAG)</span>
+          </button>
+          <button class="sandbox__tab" id="tab-sailtask" data-tab="sailtask" role="tab" aria-selected="false" aria-controls="panel-sailtask">
+            <span class="sandbox__tab-icon">⚙️</span>
+            <span>SailTask (Live Workflow)</span>
+          </button>
+          <button class="sandbox__tab" id="tab-cadox" data-tab="cadox" role="tab" aria-selected="false" aria-controls="panel-cadox">
+            <span class="sandbox__tab-icon">🏗️</span>
+            <span>Cadox (Coming Soon)</span>
+          </button>
+        </div>
+
+        <!-- Sandbox Body -->
+        <div class="sandbox__content">
+
+          <!-- Tab Panel 1: Ragify -->
+          <div class="sandbox__panel active" id="panel-ragify" role="tabpanel" aria-labelledby="tab-ragify">
+            <div class="sandbox__grid">
+              <div class="sandbox__input-col">
+                <label class="sandbox__label">Enter Natural Language Query or Select Prompt:</label>
+                <div class="sandbox__presets">
+                  <button class="preset-btn" data-preset="rag1">"Summarize safety compliance in ISO-9001 specs"</button>
+                  <button class="preset-btn" data-preset="rag2">"What are the API rate limits for vectorized search?"</button>
+                  <button class="preset-btn" data-preset="rag3">"Find all component stress tolerances in Q4 audit"</button>
+                </div>
+                <textarea id="ragifyQueryInput" class="sandbox__textarea" rows="3" placeholder="Ask anything across your indexed document repository..."></textarea>
+                <button class="btn btn--primary btn--full" id="runRagifyBtn">
+                  <span>Execute RAG Vector Search</span>
+                  <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                </button>
+              </div>
+
+              <div class="sandbox__output-col">
+                <div class="sandbox__output-header">
+                  <span>FAISS Vector Pipeline Stream</span>
+                  <span class="output-status" id="ragifyStatus">Ready</span>
+                </div>
+                <div class="sandbox__console" id="ragifyConsole">
+                  <p class="console-placeholder">// Click a sample prompt above or enter a query and press Execute to simulate RAG retrieval...</p>
+                </div>
+              </div>
             </div>
           </div>
-          <a href="#contact" class="btn btn--white btn--lg">Start your AI journey</a>
+
+          <!-- Tab Panel 2: SailTask -->
+          <div class="sandbox__panel" id="panel-sailtask" role="tabpanel" aria-labelledby="tab-sailtask" hidden>
+            <div class="sandbox__grid">
+              <div class="sandbox__input-col">
+                <label class="sandbox__label">Input Unstructured Meeting Notes / Raw Email:</label>
+                <textarea id="sailtaskInput" class="sandbox__textarea" rows="5" placeholder="e.g., During today's engineering sync, Digvijay instructed us to optimize the FAISS vector index by Friday, update API endpoints for SailTask, and send the CAD review to the manufacturing lead."></textarea>
+                <button class="btn btn--purple btn--full" id="runSailtaskBtn">
+                  <span>Extract Action Items & Generate Tasks</span>
+                  <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                </button>
+              </div>
+
+              <div class="sandbox__output-col">
+                <div class="sandbox__output-header">
+                  <span>Generated Workflow Actions (JSON / Workflow)</span>
+                  <span class="output-status" id="sailtaskStatus">Ready</span>
+                </div>
+                <div class="sandbox__console" id="sailtaskConsole">
+                  <p class="console-placeholder">// SailTask will automatically parse key action items, assign priorities, and output structured API payloads here...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Panel 3: Cadox -->
+          <div class="sandbox__panel" id="panel-cadox" role="tabpanel" aria-labelledby="tab-cadox" hidden>
+            <div class="sandbox__notice">
+              <span class="notice-badge">R&D PREVIEW</span>
+              <span>Cadox is currently in active R&D (Phase 3 Roadmap). Try out our interactive early prototype preview below!</span>
+            </div>
+            <div class="sandbox__grid">
+              <div class="sandbox__input-col">
+                <label class="sandbox__label">Select Engineering Sample CAD File:</label>
+                <select id="cadoxSelect" class="sandbox__select">
+                  <option value="turbine">Turbine_Blade_Assembly_v4.STEP</option>
+                  <option value="gearbox">High_Torque_Gearbox_Housing.IGES</option>
+                  <option value="chassis">Aerospace_Chassis_Bracket.SLDPRT</option>
+                </select>
+                <div class="cad-preview-box">
+                  <div class="cad-wireframe">
+                    <div class="cube">
+                      <div class="side front"></div>
+                      <div class="side back"></div>
+                      <div class="side right"></div>
+                      <div class="side left"></div>
+                      <div class="side top"></div>
+                      <div class="side bottom"></div>
+                    </div>
+                  </div>
+                  <span class="cad-preview-tag">3D Mesh Wireframe Simulated</span>
+                </div>
+                <button class="btn btn--blue btn--full" id="runCadoxBtn">
+                  <span>Analyze CAD Geometry & Extract Metadata</span>
+                  <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                </button>
+              </div>
+
+              <div class="sandbox__output-col">
+                <div class="sandbox__output-header">
+                  <span>Cadox Engineering Analysis Output</span>
+                  <span class="output-status" id="cadoxStatus">Ready</span>
+                </div>
+                <div class="sandbox__console" id="cadoxConsole">
+                  <p class="console-placeholder">// Select a CAD assembly above and click Analyze to view extracted geometry metadata, stress tolerance calculations, and AI design optimization notes...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -303,74 +459,256 @@
 
 
   <!-- ============================================================
-       CONTACT
+       TECH STACK & ARCHITECTURE SECTION
+  ============================================================ -->
+  <section class="architecture" id="architecture">
+    <div class="container">
+      <header class="section-header reveal">
+        <div class="badge badge--pill">Enterprise Infrastructure</div>
+        <h2 class="section-header__title">Built on High-Performance AI Architecture</h2>
+        <p class="section-header__sub">
+          Engineered with modern microservices, vector search pipelines, and enterprise-grade security for seamless cloud or on-premise deployment.
+        </p>
+      </header>
+
+      <div class="architecture__grid">
+        <div class="arch-card reveal">
+          <div class="arch-card__icon">🐍</div>
+          <h3 class="arch-card__title">Python & FastAPI Backend</h3>
+          <p class="arch-card__desc">Asynchronous, ultra-low latency backend REST & Streaming endpoints built for heavy AI workload orchestration.</p>
+        </div>
+
+        <div class="arch-card reveal reveal-delay-1">
+          <div class="arch-card__icon">⚡</div>
+          <h3 class="arch-card__icon-title">FAISS Vector Indexing</h3>
+          <p class="arch-card__desc">Meta AI's FAISS library integrated for sub-50ms dense vector similarity searches across millions of document embeddings.</p>
+        </div>
+
+        <div class="arch-card reveal reveal-delay-2">
+          <div class="arch-card__icon">🤗</div>
+          <h3 class="arch-card__title">Transformer Embeddings</h3>
+          <p class="arch-card__desc">State-of-the-art sentence transformers and domain-adapted LLMs for high contextual precision.</p>
+        </div>
+
+        <div class="arch-card reveal reveal-delay-3">
+          <div class="arch-card__icon">🐳</div>
+          <h3 class="arch-card__title">Docker & SaaS Ready</h3>
+          <p class="arch-card__desc">Containerized architecture allowing instant cloud deployment on AWS, Azure, GCP, or private air-gapped enterprise clusters.</p>
+        </div>
+      </div>
+
+      <!-- Tech Stack Badges -->
+      <div class="tech-stack-strip reveal">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">FastAPI</span>
+        <span class="tech-badge">FAISS Vector DB</span>
+        <span class="tech-badge">HuggingFace Transformers</span>
+        <span class="tech-badge">PyTorch</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">OpenAI / Custom LLMs</span>
+        <span class="tech-badge">Streamlit / React</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOUNDER & VISION SECTION
+  ============================================================ -->
+  <section class="founder" id="founder">
+    <div class="container founder__inner">
+      <div class="founder__left reveal">
+        <div class="badge badge--pill">Leadership & Mission</div>
+        <h2 class="founder__title">Pioneering Next-Gen AI & Engineering Intelligence</h2>
+        <p class="founder__desc">
+          MindHarbourAI was founded with a singular vision: to build intelligent systems that eliminate manual overhead, automate complex decision-making, and unlock productivity across technical and engineering domains.
+        </p>
+
+        <div class="quote-card">
+          <div class="quote-mark">“</div>
+          <blockquote class="quote-text">
+            Artificial intelligence shouldn't just summarize text — it should understand the structure of knowledge, automate multi-step workflows, and analyze complex engineering assets like CAD models to give professionals superpowers.
+          </blockquote>
+          <div class="founder-info">
+            <span class="founder-name">Digvijay</span>
+            <span class="founder-role">Founder & CEO, MindHarbourAI</span>
+          </div>
+        </div>
+
+        <ul class="checklist" role="list">
+          <li class="checklist__item">Dedicated to domain-specific AI automation</li>
+          <li class="checklist__item">Continuous model evaluation & active retraining pipelines</li>
+          <li class="checklist__item">Built with SOC 2 compliance and enterprise data security in mind</li>
+        </ul>
+      </div>
+
+      <div class="founder__right reveal reveal-delay-2">
+        <div class="vision-card">
+          <div class="vision-card__header">
+            <img src="logo.png" alt="MindHarbourAI Emblem" class="vision-card__logo" />
+            <h3>Platform Strategic Roadmap</h3>
+          </div>
+          
+          <div class="timeline">
+            <div class="timeline__item completed">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Phase 1: Core Engines</h4>
+                <p>Launch of Ragify RAG search, SailTask automated pipeline, and initial CAD metadata parser.</p>
+              </div>
+            </div>
+
+            <div class="timeline__item active">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Phase 2: Knowledge Graphs & Workflow Sync</h4>
+                <p>Knowledge Graph integration, real-time AI workflows, and multilingual vector embedding support.</p>
+              </div>
+            </div>
+
+            <div class="timeline__item upcoming">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <h4>Phase 3: Advanced CAD Intelligence (Cadox 3D)</h4>
+                <p>Deep 3D spatial stress analysis, generative CAD geometry optimization, and automated engineering report generation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FAQ SECTION
+  ============================================================ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <header class="section-header reveal">
+        <div class="badge badge--pill">Frequently Asked Questions</div>
+        <h2 class="section-header__title">Got Questions? We Have Answers.</h2>
+        <p class="section-header__sub">Everything you need to know about MindHarbourAI products, security, and deployment.</p>
+      </header>
+
+      <div class="faq__list reveal">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>What is Ragify and how does Retrieval-Augmented Generation (RAG) work?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Ragify is our AI-powered knowledge retrieval engine. It converts your company's documents, PDFs, and data into dense vector embeddings stored in a FAISS vector database. When a user asks a query, Ragify instantly retrieves the most relevant semantic contexts and uses modern LLMs to generate accurate, source-cited responses without data hallucination.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>How does SailTask automate tasks from unstructured data?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>SailTask uses fine-tuned NLP models to parse meeting notes, emails, and document summaries. It identifies key action items, assigns responsibility, sets deadline estimates, and automatically triggers external workflows via REST APIs, webhooks, or task management integrations.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>What makes Cadox different for CAD and engineering teams?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Unlike standard text LLMs, Cadox is specifically built to inspect and understand engineering CAD data formats (such as STEP, IGES, and SolidWorks files). It parses geometric metadata, assembly hierarchies, and component attributes to help engineers query design specs and accelerate design analysis.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Can MindHarbourAI be deployed on-premise or in private clouds?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Yes! MindHarbourAI is fully containerized using Docker and FastAPI. It can be deployed as a managed SaaS solution or hosted entirely within your private VPC (AWS, Azure, GCP) or air-gapped enterprise servers to meet strict data privacy requirements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT / CONSULTATION SECTION
   ============================================================ -->
   <section class="contact" id="contact">
     <div class="container contact__inner">
-      <header class="section-header section-header--dark">
-        <h2 class="section-header__title">Let's build the future together</h2>
-        <p class="section-header__sub">Ready to implement AI in your business? Our experts are here to help.</p>
-      </header>
-
-      <div class="contact__box">
+      <div class="contact__box reveal">
         <div class="contact__info">
-          <h3 class="contact__info-title">Get in touch</h3>
+          <div class="badge badge--pill">Get In Touch</div>
+          <h2 class="contact__title">Let's Automate the Future Together</h2>
+          <p class="contact__desc">
+            Ready to integrate Ragify, SailTask, or Cadox into your enterprise workflow? Reach out to our engineering team for a personalized demo and technical consultation.
+          </p>
 
-          <div class="contact__detail">
-            <div class="contact__detail-icon" aria-hidden="true">
-              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 4a2 2 0 012-2h12a2 2 0 012 2v.382l-8 5-8-5V4zm0 2.618V16a2 2 0 002 2h12a2 2 0 002-2V6.618l-8 5-8-5z"/></svg>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <div class="contact__detail-icon" aria-hidden="true">✉️</div>
+              <div>
+                <span class="contact__detail-label">Direct Contact</span>
+                <a href="mailto:ai@mindharbour.com" class="contact__detail-val">ai@mindharbour.com</a>
+              </div>
             </div>
-            <div>
-              <p class="contact__detail-label">Email</p>
-              <span class="contact__detail-val">ai@mindharbour.com</span>
-            </div>
-          </div>
 
-          <div class="contact__detail">
-            <div class="contact__detail-icon" aria-hidden="true">
-              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+            <div class="contact__detail">
+              <div class="contact__detail-icon" aria-hidden="true">📍</div>
+              <div>
+                <span class="contact__detail-label">Headquarters</span>
+                <span class="contact__detail-val">MindHarbourAI Labs, Tech Hub</span>
+              </div>
             </div>
-            <div>
-              <p class="contact__detail-label">Headquarters</p>
-              <span class="contact__detail-val">Silicon Valley, CA 94000</span>
-            </div>
-          </div>
 
-          <div class="contact__detail">
-            <div class="contact__detail-icon" aria-hidden="true">
-              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
-            </div>
-            <div>
-              <p class="contact__detail-label">Phone</p>
-              <span class="contact__detail-val">+1 (555) 246-8324</span>
+            <div class="contact__detail">
+              <div class="contact__detail-icon" aria-hidden="true">👤</div>
+              <div>
+                <span class="contact__detail-label">Founder</span>
+                <span class="contact__detail-val">Digvijay (Founder & Lead Architect)</span>
+              </div>
             </div>
           </div>
         </div>
 
         <form class="contact__form" id="contactForm" novalidate>
+          <h3 class="form-title">Request AI Platform Access</h3>
+          
           <div class="form-group">
-            <label class="form-label" for="name">Name</label>
-            <input class="form-input" type="text" id="name" name="name" placeholder="Your full name" required />
+            <label class="form-label" for="name">Full Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="e.g. Alex Mercer" required />
           </div>
+
           <div class="form-group">
-            <label class="form-label" for="email">Email</label>
-            <input class="form-input" type="email" id="email" name="email" placeholder="you@company.com" required />
+            <label class="form-label" for="email">Work Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="alex@company.com" required />
           </div>
+
           <div class="form-group">
-            <label class="form-label" for="usecase">AI use case</label>
+            <label class="form-label" for="usecase">Primary AI Focus</label>
             <select class="form-input form-select" id="usecase" name="usecase">
-              <option value="customer-service">Customer service automation</option>
-              <option value="analytics">Predictive analytics</option>
-              <option value="content">Content generation</option>
-              <option value="vision">Computer vision</option>
-              <option value="custom">Custom AI solution</option>
+              <option value="ragify">Ragify — Knowledge Search & RAG</option>
+              <option value="sailtask">SailTask — AI Workflow & Task Automation</option>
+              <option value="cadox">Cadox — CAD & Engineering Intelligence</option>
+              <option value="suite">Full Enterprise AI Suite</option>
             </select>
           </div>
+
           <div class="form-group">
-            <label class="form-label" for="message">Message</label>
-            <textarea class="form-input form-textarea" id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+            <label class="form-label" for="message">Project Overview / Requirements</label>
+            <textarea class="form-input form-textarea" id="message" name="message" placeholder="Tell us about your data, workflows, or CAD requirements..." rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn btn--gradient btn--lg btn--full">Request AI consultation</button>
+
+          <button type="submit" class="btn btn--primary btn--glow btn--full">
+            <span>Send Access Request</span>
+            <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          
           <p class="contact__form-note" id="formStatus" aria-live="polite"></p>
         </form>
       </div>
@@ -385,64 +723,79 @@
     <div class="container footer__inner">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div class="footer__brand-name">
-            <span>⬡</span> MindHarbourAI
+          <a href="#home" class="footer__logo">
+            <img src="logoImage.png" alt="MindHarbourAI Logo" class="footer__logo-img" />
+            <span class="footer__logo-text">MindHarbour<span class="text-gradient">AI</span></span>
+          </a>
+          <p class="footer__brand-desc">
+            Pioneering artificial intelligence and engineering intelligence solutions for next-generation enterprises.
+          </p>
+          <div class="footer__meta">
+            <span>Founded by Digvijay</span> • <span>Built with Python & FAISS</span>
           </div>
-          <p class="footer__brand-desc">Pioneering the future of artificial intelligence with cutting-edge products and enterprise solutions.</p>
         </div>
 
         <div class="footer__col">
-          <h4 class="footer__col-title">Products</h4>
+          <h4 class="footer__col-title">AI Products</h4>
           <ul class="footer__links" role="list">
-            <li><a href="#products">ChatBot Pro</a></li>
-            <li><a href="#products">Predictive Analytics</a></li>
-            <li><a href="#products">Content Generator</a></li>
-            <li><a href="#products">Computer Vision</a></li>
-            <li><a href="#products">AutoML Platform</a></li>
+            <li><a href="#products">Ragify (RAG Engine)</a></li>
+            <li><a href="#products">SailTask (Workflow AI)</a></li>
+            <li><a href="#products">Cadox (CAD Engine)</a></li>
+            <li><a href="#playground">Interactive Sandbox</a></li>
           </ul>
         </div>
 
         <div class="footer__col">
-          <h4 class="footer__col-title">Resources</h4>
+          <h4 class="footer__col-title">Architecture</h4>
           <ul class="footer__links" role="list">
-            <li><a href="#">API documentation</a></li>
-            <li><a href="#">AI research</a></li>
-            <li><a href="#">Case studies</a></li>
-            <li><a href="#">Developer tools</a></li>
+            <li><a href="#architecture">FastAPI & Python</a></li>
+            <li><a href="#architecture">FAISS Vector Store</a></li>
+            <li><a href="#architecture">Transformers & RAG</a></li>
+            <li><a href="#architecture">Docker Deployment</a></li>
           </ul>
         </div>
 
         <div class="footer__col">
           <h4 class="footer__col-title">Company</h4>
           <ul class="footer__links" role="list">
-            <li><a href="#about">About us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Terms of service</a></li>
+            <li><a href="#founder">About Founder</a></li>
+            <li><a href="#founder">Platform Roadmap</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact & Demo</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer__bottom">
-        <p>© 2025 MindHarbourAI. Shaping the future with artificial intelligence.</p>
+        <p>© 2026 MindHarbourAI. All rights reserved. Shaping the future of AI & Engineering Intelligence.</p>
       </div>
     </div>
   </footer>
 
 
   <!-- ============================================================
-       PRODUCT MODAL
+       PRODUCT DETAIL MODAL
   ============================================================ -->
   <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
     <div class="modal__overlay" id="modalOverlay"></div>
     <div class="modal__box">
       <button class="modal__close" id="modalClose" aria-label="Close modal">✕</button>
-      <div class="modal__icon" id="modalIcon" aria-hidden="true"></div>
-      <h3 class="modal__title" id="modalTitle"></h3>
+      <div class="modal__header">
+        <div class="modal__icon" id="modalIcon" aria-hidden="true"></div>
+        <div>
+          <span class="modal__tag" id="modalTag">Product Feature</span>
+          <h3 class="modal__title" id="modalTitle"></h3>
+        </div>
+      </div>
       <p class="modal__desc" id="modalDesc"></p>
+
+      <div class="modal__specs" id="modalSpecs">
+        <!-- Injected via JavaScript -->
+      </div>
+
       <div class="modal__actions">
-        <a href="#contact" class="btn btn--gradient btn--lg modal__cta" id="modalCta">Start free trial</a>
-        <button class="btn btn--ghost btn--lg" id="modalCloseBtn">Close</button>
+        <a href="#contact" class="btn btn--primary btn--glow modal__cta" id="modalCta">Request Product Demo</a>
+        <button class="btn btn--glass" id="modalCloseBtn">Close</button>
       </div>
     </div>
   </div>
