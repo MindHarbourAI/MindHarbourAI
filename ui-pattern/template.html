@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SailTask – Consistent UI Pattern Demo</title>
+  <link rel="stylesheet" href="./ui-pattern.css" />
+</head>
+<body>
+  <!-- Auth Page Example -->
+  <section class="auth-page">
+    <div class="auth-card">
+      <div class="auth-card-logo">
+        <div class="auth-card-logo-icon">🚀</div>
+        <div class="auth-card-logo-name">SailTask</div>
+      </div>
+      <h2 class="auth-heading">Sign in to SailTask</h2>
+      <p class="auth-subheading">Manage your tasks with a premium UI.</p>
+      <form>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" type="email" id="email" placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input class="form-input" type="password" id="password" placeholder="••••••••" />
+        </div>
+        <button class="btn btn-primary" type="submit">Sign In</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- App Layout Example (Sidebar + Main) -->
+  <div class="app-layout" style="display:none;">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <div class="sidebar-logo-icon">🗂️</div>
+          <div class="sidebar-logo-text">
+            <div class="sidebar-logo-name">SailTask</div>
+            <div class="sidebar-logo-sub">Task Management</div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="sidebar-section">
+          <div class="sidebar-section-label">MAIN</div>
+          <button class="sidebar-item active"><span class="sidebar-item-icon">📋</span>Dashboard</button>
+          <button class="sidebar-item"><span class="sidebar-item-icon">💬</span>Chat</button>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-section-label">SETTINGS</div>
+          <button class="sidebar-item"><span class="sidebar-item-icon">⚙️</span>Preferences</button>
+        </div>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-user">
+          <div class="sidebar-avatar">AB</div>
+          <div class="sidebar-user-info">
+            <div class="sidebar-user-name">Alex Brown</div>
+            <div class="sidebar-user-email">alex@example.com</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <div class="topbar-title">Dashboard</div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost">🔔 Notifications</button>
+          <button class="btn btn-primary">+ New Task</button>
+        </div>
+      </header>
+      <section class="chat-container">
+        <div class="chat-messages">
+          <div class="message ai">
+            <div class="msg-avatar ai">AI</div>
+            <div class="msg-bubble">Welcome to SailTask! How can I help you today?</div>
+          </div>
+          <div class="message user">
+            <div class="msg-avatar user">U</div>
+            <div class="msg-bubble">Show me my pending tasks.</div>
+          </div>
+        </div>
+        <div class="chat-input" style="margin-top:16px;">
+          <input class="form-input" type="text" placeholder="Type a message…" />
+          <button class="btn btn-primary" style="margin-top:8px;">Send</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
