@@ -8,7 +8,7 @@ It combines intelligent knowledge retrieval, task automation, and engineering-fo
 
 ### Core Products:
 
-* **Ragify** – AI-powered knowledge retrieval (RAG)
+* **SailAnchor** – AI-powered knowledge retrieval (RAG)
 * **SailTask** – AI-driven task and workflow automation
 * **Cadox** – AI for CAD and engineering intelligence
 
@@ -22,9 +22,9 @@ To build intelligent systems that reduce manual effort, automate decision-making
 
 ## 🧩 Products
 
-### 🔍 Ragify – Intelligent Knowledge Assistant
+### 🔍 SailAnchor – Intelligent Knowledge Assistant
 
-Ragify enables users to query documents and datasets using natural language through Retrieval-Augmented Generation (RAG).
+SailAnchor enables users to query documents and datasets using natural language through Retrieval-Augmented Generation (RAG).
 
 **Key Features:**
 
