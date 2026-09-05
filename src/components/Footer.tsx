@@ -39,11 +39,11 @@ export default function Footer() {
             {/* Brand */}
             <div className="col-span-2 md:col-span-1">
               <a href="#" className="flex items-center gap-2.5 mb-4">
-                <div className="w-7 h-7 rounded-md bg-zinc-900 flex items-center justify-center p-1 overflow-hidden">
-                  <img src={logoImage} alt="MindHarborAI Logo" className="w-full h-full object-contain filter invert" />
+                <div className="w-8 h-8 flex items-center justify-center overflow-hidden">
+                  <img src={logoImage} alt="MindHarborAI Logo" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <span className="text-sm font-bold text-zinc-900 tracking-tight">MindHarbor<span className="text-blue-600">AI</span></span>
+                  <span className="text-base font-bold text-zinc-900 tracking-tight">MindHarbor<span className="text-blue-600">AI</span></span>
                 </div>
               </a>
               <p className="text-xs text-stone-500 leading-relaxed max-w-[240px]">

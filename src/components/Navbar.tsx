@@ -32,10 +32,10 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo with BETA Badge */}
+        {/* Logo */}
         <a href="#" className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-zinc-900 flex items-center justify-center p-1 overflow-hidden shadow-sm">
-            <img src={logoImage} alt="MindHarborAI Logo" className="w-full h-full object-contain filter invert" />
+          <div className="w-8 h-8 flex items-center justify-center overflow-hidden">
+            <img src={logoImage} alt="MindHarborAI Logo" className="w-full h-full object-contain" />
           </div>
           <div className="flex flex-col leading-none">
             <div className="flex items-center gap-1.5">
