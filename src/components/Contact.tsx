@@ -9,19 +9,59 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!name || !email || !message) return
     setIsSubmitting(true)
 
-    setTimeout(() => {
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+
+    if (accessKey) {
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            access_key: accessKey,
+            name,
+            email,
+            subject: `Inquiry from ${name} - ${usecase}`,
+            usecase,
+            message,
+          }),
+        })
+        const result = await response.json()
+        if (result.success) {
+          setIsSubmitted(true)
+          setName('')
+          setEmail('')
+          setMessage('')
+        } else {
+          // Fallback to mailto if service fails
+          triggerMailtoFallback()
+        }
+      } catch {
+        triggerMailtoFallback()
+      } finally {
+        setIsSubmitting(false)
+      }
+    } else {
+      // Direct mailto fallback to mindharbourai@gmail.com
+      triggerMailtoFallback()
       setIsSubmitting(false)
-      setIsSubmitted(true)
-      setName('')
-      setEmail('')
-      setMessage('')
-      setTimeout(() => setIsSubmitted(false), 6000)
-    }, 1000)
+    }
+  }
+
+  const triggerMailtoFallback = () => {
+    const subject = encodeURIComponent(`Inquiry regarding ${usecase} - MindHarborAI`)
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nProduct / Interest: ${usecase}\n\nMessage:\n${message}`
+    )
+    window.location.href = `mailto:mindharbourai@gmail.com?subject=${subject}&body=${body}`
+    setIsSubmitted(true)
+    setName('')
+    setEmail('')
+    setMessage('')
   }
 
   return (
@@ -54,7 +94,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-zinc-900 text-sm">Email Support</h4>
-                  <p className="text-xs text-stone-600 mt-0.5">support@mindharbor.ai</p>
+                  <p className="text-xs text-stone-600 mt-0.5">mindharbourai@gmail.com</p>
                   {/* <p className="text-[11px] text-stone-400 mt-0.5">Enterprise SLA: Under 2 hours response</p> */}
                 </div>
               </div>
