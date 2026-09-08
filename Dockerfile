@@ -10,8 +10,8 @@ COPY package*.json ./
 RUN npm ci
 
 # Build arguments for Vite environment variables (embedded into static JS during build)
-ARG VITE_SAILANCHOR_URL=https://anchor.mindharbourai.com
-ARG VITE_SAILTASK_URL=https://task.mindharbourai.com
+ARG VITE_SAILANCHOR_URL=https://sailanchor.mindharbourai.com
+ARG VITE_SAILTASK_URL=https://sailtask.mindharbourai.com
 
 ENV VITE_SAILANCHOR_URL=${VITE_SAILANCHOR_URL}
 ENV VITE_SAILTASK_URL=${VITE_SAILTASK_URL}

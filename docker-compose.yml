@@ -6,8 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        VITE_SAILANCHOR_URL: ${VITE_SAILANCHOR_URL:-https://sailanchor.yourdomain.com}
-        VITE_SAILTASK_URL: ${VITE_SAILTASK_URL:-https://sailtask.yourdomain.com}
+        VITE_SAILANCHOR_URL: ${VITE_SAILANCHOR_URL:-https://sailanchor.mindharbourai.com}
+        VITE_SAILTASK_URL: ${VITE_SAILTASK_URL:-https://sailtask.mindharbourai.com}
     container_name: mindharbor_landing
     restart: always
     ports:
